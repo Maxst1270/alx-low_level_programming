@@ -1,15 +1,13 @@
 #include<stdio.h>
 
 /**
- * main- is an Entry point
- * 
- * dis: it is printing program
- * 
- * returns: a constant return value  0
+ * main - is an Entry point
+ * Description: it is printing program
+ * return: always return value 0
  */
 
- int main(void)
+int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return(0);
+	 puts("\"Programming is like building a multilingual puzzle");
+	 return(0);
 }
