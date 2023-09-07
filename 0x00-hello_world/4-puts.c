@@ -6,7 +6,7 @@
  * dis: it is printing program
  * 
  * returns: a constant return value  0
- * /
+ */
 
  int main(void)
 {
