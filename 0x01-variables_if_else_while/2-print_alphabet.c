@@ -13,8 +13,8 @@ int main(void)
 
 	while (al <= 'z')
 	{
-		putchar(alp);
-		alp++;
+		putchar(al);
+		al++;
 	}
 	putchar("\n");
 
