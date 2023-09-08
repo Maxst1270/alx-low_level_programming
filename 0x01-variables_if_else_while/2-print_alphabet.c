@@ -9,9 +9,9 @@
 */
 int main(void)
 {
-	char alp = 'a';
+	char al = 'a';
 
-	while (alp <= 'z')
+	while (al <= 'z')
 	{
 		putchar(alp);
 		alp++;
