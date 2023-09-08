@@ -17,7 +17,7 @@ int main(void)
 		c++;
 	}
 
-	printf('\n');
+	printf("\n");
 
 	return (0);
 }
