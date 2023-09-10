@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description:printing a one liner
+ * Description:printing a one liner function
  *
  * Return:returns 1 unsuccessful
 */
