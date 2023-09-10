@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	int frscnt, scndcnt;
+	int frscnt = 0, scndcnt;
 
-	for (frscnt = 0; frscnt <= 99; frscnt++)
+	while (frscnt <= 99)
 	{
 		scndcnt = 0;
 
@@ -34,6 +34,7 @@ int main(void)
 			}
 			scndcnt++;
 		}
+		frscnt++;
 	}
 	putchar('\n');
 
