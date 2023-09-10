@@ -14,7 +14,7 @@ int main(void)
 
 	while (frscnt <= 99)
 	{
-		scndcnt = 0;
+		scndcnt = frscnt;
 
 		while (scndcnt <= 99)
 		{
