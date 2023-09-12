@@ -10,7 +10,15 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	char str[] = "_putchar";
+	int cnt = 0;
+
+	while (cnt < 8)
+	{
+		putchar('str[cnt]');
+		cnt++;
+	}
+	putchar('\n');
 
 	return (0);
 }
