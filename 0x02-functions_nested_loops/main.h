@@ -2,7 +2,8 @@
 #define MAIN_H
 
 #include <stdio.h>
-int _putchar(char h);
+int _putchar(char k);
+
 
 
 #endif
