@@ -14,5 +14,5 @@ int add(int v, int w)
 {
 	int sum = v + w;
 
-	return (0);
+	return (sum);
 }
