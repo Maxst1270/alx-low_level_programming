@@ -27,7 +27,7 @@ void times_table(void)
 
 			_putchar((p % 10) + 48);
 		}
-			_puthar('\n');
+			_putchar('\n');
 
 	}
 
