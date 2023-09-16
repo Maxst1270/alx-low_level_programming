@@ -9,19 +9,19 @@
 
 void print_to_98(int n)
 {
-	int par;
+	int par = n;
 
 	if (n > 98)
-		while (n > par)
+		while (par > 98)
 		{
 			printf("%d", par);
-			n--;
+			par--;
 		}
 	else
-		while (n < 98) 
+		while (n < 98)
 		{
 			printf("%d ", par);
-		n++;
+		par++;
 		}
 
 }
