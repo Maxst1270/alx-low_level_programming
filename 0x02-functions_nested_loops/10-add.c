@@ -2,12 +2,11 @@
 
 
  /**
-  * add - function that adds two integers
+  * add - adds two integers
   *
-  *@v:first integer input
-  *@w:second integer input
-  *
-  * Return:sum of v and w
+  * @v: first integer
+  * @w: second integer
+  * Return: sum of two integers
  */
 
 int add(int v, int w)
