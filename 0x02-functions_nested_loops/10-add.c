@@ -1,13 +1,13 @@
 #include "main.h"
 
-
- /**
-  * add - adds two integers
-  *
-  * @v: first integer
-  * @w: second integer
-  * Return: sum of two integers
- */
+/**
+ * add - sums two integers
+ *
+ *@v:first integer
+ *@w: second integer
+ *
+ * Return: returns the sum
+*/
 
 int add(int v, int w)
 {
