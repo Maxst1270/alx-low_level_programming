@@ -19,14 +19,14 @@ int main(void)
 
 	while (list <= 50)
 	{
-		if (list < 50)
+		if (list == 50)
 		{
-			printf("%d, ", fbn);
+			printf("%d\n ", fbn);
 		}
 
-		else if (list == 50)
+		else 
 		{
-			printf("%d \n", fbn);
+			printf("%d, ", fbn);
 		}
 
 		fb1 = fb2;
