@@ -17,7 +17,7 @@ int main(void)
 	printf("%d, ", fb1);
 	printf("%d, ", fb2);
 
-	for (; list <= 50; list++)
+	while (list <= 50)
 	{
 		if (list < 50)
 			printf("%d, ", fbn);
@@ -30,6 +30,7 @@ int main(void)
 
 		fbn = fb1 + fb2;
 
+		list++;
 	}
 	return (0);
 }
