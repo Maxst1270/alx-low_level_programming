@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	long int fb1 = 0, fb2 = 1;
+	long int fb1 = 1, fb2 = 2;
 
 	long int list = 3, fbn = fb1 + fb2;
 
