@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * sum - Entry point
+ * main - Entry point
  *
  *Description:calculates the sum of every multiple of 3 or 5 under 1024
  *
  * Return: returns  0
 */
 
-int sum(void)
+int main(void)
 {
 	int sum, cnt = 0;
 
