@@ -9,11 +9,11 @@
 
 void print_times_table(int n)
 {
-	int en, dibs, cnt;
+	int en, dibs, cnt = 0;
 
 	if (n <= 15 && n >= 0)
 	{
-		for (cnt = 0; cnt <= n; cnt++)
+		while (cnt <= n)
 		{
 			_putchar(48);
 
@@ -36,10 +36,9 @@ void print_times_table(int n)
 					_putchar((en / 10) % 10 + 48);
 				}
 				else if (en <= 99 && en >= 10)
-				{
 					_putchar((en / 10) + 48);
-					_putchar((en % 10) + 48);
-				}
+
+				_putchar((en % 10) + 48);
 
 			}
 			_putchar('\n');
