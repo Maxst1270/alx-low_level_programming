@@ -21,7 +21,7 @@ int main(void)
 	{
 		if (list == 50)
 		{
-			printf("%ld ", fbn);
+			printf("%ld", fbn);
 		}
 
 		else
@@ -36,5 +36,6 @@ int main(void)
 
 		list++;
 	}
+	printf("\n");
 	return (0);
 }
