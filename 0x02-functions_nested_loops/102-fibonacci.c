@@ -20,10 +20,14 @@ int main(void)
 	while (list <= 50)
 	{
 		if (list < 50)
+		{
 			printf("%d, ", fbn);
+		}
 
 		else if (list == 50)
+		{
 			printf("%d \n", fbn);
+		}
 
 		fb1 = fb2;
 		fb2 = fbn;
