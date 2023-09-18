@@ -16,8 +16,8 @@ void print_times_table(int n)
 		while (cnt <= n)
 		{
 			_putchar(48);
-			dibs = 1;
-			while (dibs <= n)
+
+			for (dibs = 1; dibs <= n; dibs++)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -40,8 +40,6 @@ void print_times_table(int n)
 					_putchar((en / 10) + 48);
 					_putchar((en % 10) + 48);
 				}
-
-				dibs++;
 
 			}
 			_putchar('\n');
