@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	int fb1 = 0, fb2 = 1;
+	long int fb1 = 0, fb2 = 1;
 
-	int list, fbn = fb1 + fb2;
+	long int list, fbn = fb1 + fb2;
 
 	printf("%d, ", fb1);
 	printf("%d, ", fb2);
@@ -24,7 +24,7 @@ int main(void)
 			printf("%d\n ", fbn);
 		}
 
-		else 
+		else
 		{
 			printf("%d, ", fbn);
 		}
