@@ -14,19 +14,19 @@ int main(void)
 
 	long int list, fbn = fb1 + fb2;
 
-	printf("%ul, ", fb1);
-	printf("%ul, ", fb2);
+	printf("%l, ", fb1);
+	printf("%l, ", fb2);
 
 	while (list <= 50)
 	{
 		if (list == 50)
 		{
-			printf("%ul\n ", fbn);
+			printf("%l\n ", fbn);
 		}
 
 		else
 		{
-			printf("%ul, ", fbn);
+			printf("%l, ", fbn);
 		}
 
 		fb1 = fb2;
