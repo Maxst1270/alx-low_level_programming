@@ -12,7 +12,7 @@ int main(void)
 {
 	long int fb1 = 0, fb2 = 1;
 
-	long int list, fbn = fb1 + fb2;
+	long int list = 3, fbn = fb1 + fb2;
 
 	printf("%ld, ", fb1);
 	printf("%ld, ", fb2);
