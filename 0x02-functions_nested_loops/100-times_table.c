@@ -9,14 +9,14 @@
 
 void print_times_table(int n)
 {
-	int en, dibs, cnt;
+	int en, dibs, cnt = 0;
 
 	if (n <= 15 && n >= 0)
 	{
 		while (cnt <= n)
 		{
 			_putchar(48);
-
+			dibs = 1;
 			while (dibs <= n)
 			{
 				_putchar(',');
@@ -47,6 +47,6 @@ void print_times_table(int n)
 			_putchar('\n');
 		cnt++;
 		}
-}
+	}
 
 }
