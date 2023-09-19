@@ -17,9 +17,6 @@ int main(void)
 
 	while (list <= check)
 	{
-		if (sum < check)
-			break;
-
 		sum = 2;
 		fbn = fb1 + fb2;
 
