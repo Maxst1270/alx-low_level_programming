@@ -17,14 +17,14 @@ int main(void)
 
 	while (fbn <= check)
 	{
+		if (sum > 4000000)
+                        break;
+
 		sum = 2;
 		fbn = fb1 + fb2;
 
 		if (fbn % 2 == 0)
 			sum = sum + fbn;
-
-		if (sum > 4000000)
-			break;
 
 		fb1 = fb2;
 		fb2 = fbn;
