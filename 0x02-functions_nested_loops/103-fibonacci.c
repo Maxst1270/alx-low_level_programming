@@ -17,8 +17,6 @@ int main(void)
 
 	while (fbn <= check)
 	{
-		printf("%ld, ", sum);
-
 		fbn = fb1 + fb2;
 
 		if (fbn % 2 == 0)
@@ -27,7 +25,7 @@ int main(void)
 		fb1 = fb2;
 		fb2 = fbn;
 	}
-	printf("\n");
+	printf("%ld\n", sum);
 
 	return (0);
 }
