@@ -11,12 +11,13 @@
 
 int main(void)
 {
-	long int fb1 = 1, fb2 = 2, fbn, sum = 2, check;
+	long int fb1 = 1, fb2 = 2, fbn, sum, check;
 
 	check = 4000000;
 
 	while (fbn <= check)
 	{
+		sum = 2;
 		fbn = fb1 + fb2;
 
 		if (fbn % 2 == 0)
