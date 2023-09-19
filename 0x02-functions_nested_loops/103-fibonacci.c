@@ -23,6 +23,9 @@ int main(void)
 		if (fbn % 2 == 0)
 			sum = sum + fbn;
 
+		if (sum > 4000000)
+			break;
+
 		fb1 = fb2;
 		fb2 = fbn;
 	}
