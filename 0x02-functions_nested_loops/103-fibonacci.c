@@ -3,22 +3,19 @@
 /**
  * main - Entry point
  *
- * Description:print the sum of fibonacci numbers
- * over 4 million
+ * Description:fibonacci even numbers sum
  *
- * Return:return 0
+ * Return:returns 0
 */
 
 int main(void)
 {
-	long int fb1 = 1, fb2 = 2, fbn, sum, check = 4000000;
+	long int fb1 = 1, fb2 = 2, fbn, sum;
 
-	int list = 1;
-
-	while (list <= check)
+	while (4)
 	{
-		sum = 2;
-		fbn = fb1 + fb2;
+		if (sum > 4000000)
+			break;
 
 		if (fbn % 2 == 0)
 			sum = sum + fbn;
@@ -26,9 +23,10 @@ int main(void)
 		fb1 = fb2;
 		fb2 = fbn;
 
-		list++;
+		fbn = fb1 + fb2;
 	}
 	printf("%ld\n", sum);
 
 	return (0);
 }
+
