@@ -14,6 +14,8 @@ int main(void)
 
 	while (4)
 	{
+		fbn = fb1 + fb2;
+
 		if (fbn > 4000000)
 			break;
 
@@ -22,8 +24,6 @@ int main(void)
 
 		fb1 = fb2;
 		fb2 = fbn;
-
-		fbn = fb1 + fb2;
 	}
 	printf("%ld\n", sum);
 
