@@ -17,7 +17,7 @@ int main(void)
 
 	while (fbn <= check)
 	{
-		if (sum > 4000000)
+		if (sum > check)
                         break;
 
 		sum = 2;
