@@ -12,7 +12,7 @@ int main(void)
 {
 	long int fb1 = 1, fb2 = 2, fbn, sum;
 
-	while (4)
+	while (2)
 	{
 		fbn = fb1 + fb2;
 
