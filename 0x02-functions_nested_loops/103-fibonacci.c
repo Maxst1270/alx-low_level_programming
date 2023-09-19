@@ -11,14 +11,10 @@
 
 int main(void)
 {
-	long int fb1 = 1, fb2 = 2, fbn, sum, check;
-
-	check = 4000000;
+	long int fb1 = 1, fb2 = 2, fbn, sum, check = 4000000;
 
 	while (fbn <= check)
 	{
-		if (sum > check)
-                        break;
 
 		sum = 2;
 		fbn = fb1 + fb2;
