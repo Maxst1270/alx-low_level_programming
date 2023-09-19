@@ -13,6 +13,8 @@ int main(void)
 {
 	long int fb1 = 1, fb2 = 2, fbn, sum, check = 4000000;
 
+	fbn = fb1 + fb2;
+
 	while (fbn <= check)
 	{
 		if (sum < check)
