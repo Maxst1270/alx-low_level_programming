@@ -13,9 +13,9 @@ int main(void)
 {
 	long int fb1 = 1, fb2 = 2, fbn, sum, check = 4000000;
 
-	fbn = fb1 + fb2;
+	int list = 1;
 
-	while (fbn <= check)
+	while (list <= check)
 	{
 		if (sum < check)
 			break;
@@ -28,6 +28,8 @@ int main(void)
 
 		fb1 = fb2;
 		fb2 = fbn;
+
+		list++;
 	}
 	printf("%ld\n", sum);
 
