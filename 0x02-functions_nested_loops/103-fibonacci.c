@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	long int fb1 = 1, fb2 = 2, fbn, sum;
+	unsigned long int fb1 = 1, fb2 = 2, fbn, sum;
 
-	while (2)
+	while (1)
 	{
 		fbn = fb1 + fb2;
 
