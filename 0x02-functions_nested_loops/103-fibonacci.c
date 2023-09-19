@@ -14,7 +14,7 @@ int main(void)
 
 	while (4)
 	{
-		if (sum > 4000000)
+		if (fbn > 4000000)
 			break;
 
 		if (fbn % 2 == 0)
