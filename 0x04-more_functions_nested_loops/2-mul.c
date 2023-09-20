@@ -1,17 +1,17 @@
-#inclide "main.h"
+#include "main.h"
 
 /**
- * mul - multiplies two integers
+ * mul - multiplies two numbers
  *
- * @a: first integer to mult
- * @b: second integer to mult
+ * @a: first number
+ * @b: second number
  *
- *Return:returns fin
+ * Return: returns result
 */
 
 int mul(int a, int b)
 {
-	unsigned int fin = a * b;
+	int res = a * b;
 
-	return (fin);
+	 return (res);
 }
