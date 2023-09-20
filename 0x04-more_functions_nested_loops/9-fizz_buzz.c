@@ -15,10 +15,10 @@ int main(void)
 	{
 		if (nim % 3 == 0)
 			printf("Fizz ");
-		else if (nim % 5 == 0)
-			printf("Buzz ");
 		else if (nim % 3 == 0 && nim % 5 == 0)
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
+		else if (nim % 5 == 0)
+			printf("Buzz");
 		else
 			printf("%d ", nim);
 	}
