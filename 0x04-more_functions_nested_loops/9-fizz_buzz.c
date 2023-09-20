@@ -17,11 +17,10 @@ int main(void)
 			printf("Fizz ");
 		else if (nim % 5 == 0)
 			printf("Buzz ");
-
-		if (nim % 3 == 0 && nim % 5 == 0)
+		else if (nim % 3 == 0 && nim % 5 == 0)
 			printf("FizzBuzz");
-
-		printf("%d ", nim);
+		else
+			printf("%d ", nim);
 	}
 	printf("\n");
 
