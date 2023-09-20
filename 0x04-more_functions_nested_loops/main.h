@@ -3,6 +3,6 @@
 
 #include <stdio.h>
 int _putchar(char k);
-
+int _isupper(int c);
 
 #endif
