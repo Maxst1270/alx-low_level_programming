@@ -20,7 +20,7 @@ int main(void)
 		else if (nim % 5 == 0)
 			printf("Buzz");
 		else
-			printf("%d ", nim);
+			printf("%d", nim);
 
 		if (nim < 100)
 			printf(" ");
