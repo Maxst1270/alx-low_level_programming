@@ -24,9 +24,7 @@ int main(void)
 
 		if (nim < 100)
 			printf(" ");
-		else
-			printf("\n");
 	}
-
+	printf("\n");
 	return (0);
 }
