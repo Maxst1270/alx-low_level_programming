@@ -3,16 +3,20 @@
 /**
  * print_line - prints line to n times
  *
- * Return:returns 0
+ * @n:times - will be printed
 */
 
 void print_line(int n)
 {
 	int lp;
 
-	if (n > 0)
+	if (n <= 0)
 	{
-		lp = 0;
+		_putchar('\n');
+	}
+	else
+	{
+		lp = 1;
 
 		while (lp <= n)
 		{
@@ -21,7 +25,5 @@ void print_line(int n)
 		}
 		_putchar('\n');
 	}
-	else
-		_putchar('\n');
 
 }
