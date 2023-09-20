@@ -8,10 +8,12 @@
 
 void more_numbers(void)
 {
-	int k, v = 0;
+	int k, v;
 
 	for (k = 1; k < 11; k++)
 	{
+		v = 0;
+
 		while (v < 15)
 		{
 			_putchar(v + 48);
