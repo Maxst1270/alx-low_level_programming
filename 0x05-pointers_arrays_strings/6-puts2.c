@@ -12,9 +12,10 @@ void puts2(char *str)
 {
 	int x;
 
-	for (x = 0; str[x] != '\0'; x +=2)
+	for (x = 0; str[x] != '\0'; x++)
 	{
-		_putchar(str[x]);
+		if (i % 2 == o)
+			_putchar(str[x]);
 	}
 	_putchar('\n');
 }
