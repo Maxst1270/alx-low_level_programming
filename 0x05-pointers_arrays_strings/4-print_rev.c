@@ -4,6 +4,8 @@
  * print_rev - prints the string reversed
  *
  * @s:string pointer
+ *
+ * Return:nothing
 */
 
 void print_rev(char *s)
