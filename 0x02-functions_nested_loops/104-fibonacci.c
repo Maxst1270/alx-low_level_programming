@@ -1,4 +1,25 @@
 #include "main.h"
+/**
+ * numLength - gives string length
+ *
+ * @bit:number of op
+ *
+ * Return:dig number
+*/
+
+int numLength(int bit)
+{
+	int tl = 0;
+	if (!bit)
+		return (1);
+	while (bit)
+	{
+		bit = nit / 10;
+		tl = tl + 1;
+	}
+
+	return (tl);
+}
 
 /**
  * main - Entry point
