@@ -10,6 +10,7 @@
 int numLength(int bit)
 {
 	int tl = 0;
+
 	if (!bit)
 		return (1);
 	while (bit)
@@ -31,27 +32,28 @@ int numLength(int bit)
 
 int main(void)
 {
-	unsigned long int fin1 = 1, fin2 = 2, finx = 100000000, col, fib1o = 0,fib2o = 0, colo = 0;
-	int cnt =1, stat;
+	unsigned long b1 = 1, b2 = 2, bx = 100000000, cl, b1o = 0, b2o = 0, clo = 0;
+	int cnt = 1, stat;
 
 	while (cnt <= 98)
 	{
-		if (fib1o > 0)
-			printf("%lu", fib1o);
-		stat = numLength(finx) - 1 - numLength(fin1);
+		if (b1o > 0)
+			printf("%lu", b1o);
+		stat = numLength(bx) - 1 - numLength(b1);
 
-		for (; fib1o > 0 && stat > 0;stat--)
+		for (; b1o > 0 && stat > 0; stat--)
 		{
 			printf("%d", 0);
 		}
-		printf("%lu", fin1);
 
-		col = (fin1 + fin2) % finx;
-		colo = fib1o + fib2o + (fin1 + fin2) / finx;
-		fin1 = fin2;
-		fib1o = fib2o;
-		fin2 = col;
-		fib2o = colo;
+		printf("%lu", b1);
+
+		cl = (b1 + b2) % bx;
+		clo = b1o + b2o + (b1 + b2) / bx;
+		b1 = b2;
+		b1o = b2o;
+		b2 = cl;
+		b2o = clo;
 
 		if (cnt != 98)
 			printf(", ");
@@ -59,5 +61,5 @@ int main(void)
 			printf("\n");
 		cnt++;
 	}
-	return (0);
+	return (0)
 }
