@@ -10,10 +10,10 @@
 
 int main(void)
 {
-	unsigned long fb1 = 1, fb2 = 2, fbn;
+	unsigned long fb1 = 0, fb2 = 1, fbn;
 	float sum;
 
-	while (1)
+	while (4)
 	{
 		fbn = fb1 + fb2;
 
