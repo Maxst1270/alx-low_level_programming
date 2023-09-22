@@ -10,17 +10,33 @@
 
 int main(void)
 {
-	long int fibon1 = 1, fibon2 = 2, fibonx;
-	int cnt;
+	unsigned long int fin1 = 1, fin2 = 2, finx = 100000000, col, fib1o = 0,fib2o = 0, colo = 0;
+	int cnt =1, stat;
 
-	for (cnt = 1; cnt <= 98; cnt++)
+	while (cnt <= 98)
 	{
-		fibonx = fibon1 + fibon2;
+		if (fib1o > 0)
+			printf("%lu", fib1o);
+		stat = numLength(finx) - 1 - numLength(fin1);
 
-		printf("%ld, ", fibonx);
+		for (; fib1o > 0 && stat > 0;stat--)
+		{
+			printf("%d", 0);
+		}
+		printf("%lu", fin1);
 
-		fibon1 = fibon2;
-		fibon2 = fibonx;
+		col = (fin1 + fin2) % finx;
+		colo = fib1o + fib2o + (fin1 + fin2) / finx;
+		fin1 = fin2;
+		fib1o = fib2o;
+		fin2 = col;
+		fib2o = colo;
+
+		if (cnt != 98)
+			printf(", ");
+		else
+			printf("\n");
+		cnt++;
 	}
 	return (0);
 }
