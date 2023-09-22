@@ -20,7 +20,7 @@ int main(void)
 		if (fbn > 4000000)
 			break;
 
-		if (fbn % 2 == 0)
+		if ((fbn % 2) == 0)
 			sum = sum + fbn;
 
 		fb1 = fb2;
