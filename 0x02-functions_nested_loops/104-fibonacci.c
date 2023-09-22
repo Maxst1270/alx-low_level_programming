@@ -61,5 +61,5 @@ int main(void)
 			printf("\n");
 		cnt++;
 	}
-	return (0)
+	return (0);
 }
