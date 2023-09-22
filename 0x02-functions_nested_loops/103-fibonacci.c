@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	unsigned long int fb1 = 1, fb2 = 2, fbn;
+	unsigned long fb1 = 1, fb2 = 2, fbn;
 	float sum;
 
 	while (1)
