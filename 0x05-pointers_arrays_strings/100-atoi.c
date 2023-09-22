@@ -10,7 +10,7 @@
 
 int _atoi(char *s)
 {
-	unsigned int que;
+	unsigned int que = 0;
 	int flag = 1;
 
 	do {
