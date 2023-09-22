@@ -14,7 +14,7 @@ int numLength(int bit)
 		return (1);
 	while (bit)
 	{
-		bit = nit / 10;
+		bit = bit / 10;
 		tl = tl + 1;
 	}
 
