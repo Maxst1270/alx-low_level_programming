@@ -10,7 +10,8 @@
 
 int main(void)
 {
-	unsigned long int fb1 = 1, fb2 = 2, fbn, sum;
+	unsigned long int fb1 = 1, fb2 = 2, fbn;
+	float sum;
 
 	while (1)
 	{
@@ -25,7 +26,7 @@ int main(void)
 		fb1 = fb2;
 		fb2 = fbn;
 	}
-	printf("%ld\n", sum);
+	printf("%.of\n", sum);
 
 	return (0);
 }
