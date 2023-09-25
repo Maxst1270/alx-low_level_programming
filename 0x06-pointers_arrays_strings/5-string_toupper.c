@@ -1,4 +1,4 @@
-3include "main.h"
+#include "main.h"
 
 /**
  * *string_toupper - change string letter to uppercase
@@ -13,8 +13,9 @@ char *string_toupper(char *stn)
 
 	for (p = 0; stn[p] != '\0'; p++)
 	{
-		if (stn[p] >= 'a' && stn[p] <= 'z')
+		if (stn[p] >= 97 && stn[p] <= 122)
 			stn[p] = stn[p] - 32;
+
 	}
 	return (stn);
 }
