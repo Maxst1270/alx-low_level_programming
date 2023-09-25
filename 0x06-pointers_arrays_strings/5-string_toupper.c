@@ -3,20 +3,20 @@
 /**
  * *string_toupper - change string letter to uppercase
  *
- * @ : parameter
+ * @stn:string changed
  *
  * Return:the string after chnges
 */
-char *string_toupper(char *)
+char *string_toupper(char *stn)
 {
 	int p;
 
-	for (p =0; str[p] != '\0'; p++)
+	for (p = 0; stn[p] != '\0'; p++)
 	{
-		if (str[p] >= 97 && str[p] <= 122)
+		if (stn[p] > 96 && stn[p] < 123)
 		{
-			str[p] = str[p] - 32;
+			stn[p] = stn[p] - 32;
 		}
 	}
-	return (str);
+	return (stn);
 }
