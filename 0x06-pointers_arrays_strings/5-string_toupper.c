@@ -13,10 +13,8 @@ char *string_toupper(char *stn)
 
 	for (p = 0; stn[p] != '\0'; p++)
 	{
-		if (stn[p] > 96 && stn[p] < 123)
-		{
+		if (stn[p] >= 'a' && stn[p] <= 'z')
 			stn[p] = stn[p] - 32;
-		}
 	}
 	return (stn);
 }
