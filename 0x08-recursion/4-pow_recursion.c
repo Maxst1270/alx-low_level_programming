@@ -1,5 +1,14 @@
 #include "main.h"
 
+/**
+ * _pow_recursion - calc the base to power given
+ *
+ * @x:base
+ * @y:power
+ *
+ * Return:returns base to power given
+*/
+
 int _pow_recursion(int x, int y)
 {
 	if (y < 0)
