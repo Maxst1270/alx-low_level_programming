@@ -7,7 +7,7 @@
  *
  * Return:nu.ber if prime
 */
-
+nt prim_chk(int n, int prck);
 int is_prime_number(int n)
 {
 	return (prim_chk(n, 1));
@@ -23,7 +23,7 @@ int is_prime_number(int n)
  * Return:returns 1, returns 0, and other wise checked num
 */
 
-int prim_chk,(int n, int prck)
+int prim_chk(int n, int prck)
 {
 	if (prck >= n && n > 1)
 		return (1);
@@ -31,4 +31,4 @@ int prim_chk,(int n, int prck)
 		return (0);
 	else
 		return (prim_chk(n, prck + 1));
-}	
+}
