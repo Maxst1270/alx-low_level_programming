@@ -7,7 +7,7 @@
  *
  * Return: sqrt ,or -1 otherwise
 */
-
+int sqr(int n, int sq);
 int _sqrt_recursion(int n)
 {
 	return (sqr(n, 1));
