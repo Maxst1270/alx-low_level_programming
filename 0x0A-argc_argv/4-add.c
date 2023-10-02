@@ -12,10 +12,10 @@
 
 int main(int argc, char *argv[])
 {
-	int col;
+	int col = 0;
 	char *k;
 
-	while (argc--)
+	while (--argc)
 	{
 		for (k = argv[argc]; *k; k++)
 			if (*k < '0' || *k > '9')
