@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	{
 		for (k = argv[argc]; *k; k++)
 			if (*k < '0' || *k > '9')
-				return (printf("error\n"), 1);
+				return (printf("rror\n"), 1);
 		col += atoi(argv[argc]);
 	}
 	printf("%d\n", col);
