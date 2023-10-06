@@ -6,7 +6,7 @@
  * @width:int
  * @height:int
  *
- * RETURN:array
+ * Return:two d array
 */
 
 int **alloc_grid(int width, int height)
