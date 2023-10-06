@@ -28,7 +28,7 @@ int strleng(char *v)
 
 char *str_concat(char *s1, char *s2)
 {
-	int sz1, sz2, i, j;
+	int sz1, sz2, sz, i, j;
 	char *g;
 
 	if (s1 == NULL)
