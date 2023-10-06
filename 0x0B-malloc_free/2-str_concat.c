@@ -37,19 +37,18 @@ char *str_concat(char *s1, char *s2)
 		s2 = '\0';
 	sz1 = strleng(s1);
 	sz2 = strleng(s2);
+	sz = sz1 + sz2;
 	g = malloc(((sz1 + sz2 + 1) * sizeof(char)));
 
 	if (g == 0)
 		return (0);
 
-	for (i = 0; i < sz1 ; i++)
+	for (i = 0; i < sz; i++)
 	{
-		g[i] = s1[i];
-	}
-
-	for (j = 0; j < sz2; j++)
-	{
-		g[i++] = s2[j];
+		if (i < sz1)
+			g[i] = s1[i];
+		else
+			g[i] = s2[i - sz1];
 	}
 	g[i] = '\0';
 	return (g);
