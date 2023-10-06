@@ -28,7 +28,7 @@ int strleng(char *v)
 
 char *str_concat(char *s1, char *s2)
 {
-	int sz1, sz2, i, j = 0;
+	int sz1, sz2, i, j;
 	char *g;
 
 	if (s1 == NULL)
@@ -47,10 +47,9 @@ char *str_concat(char *s1, char *s2)
 		g[i] = s1[i];
 	}
 
-	while (j < sz2)
+	for (j = 0; j < sz2; j++)
 	{
 		g[i++] = s2[j];
-		j++;
 	}
 	g[i] = '\0';
 	return (g);
