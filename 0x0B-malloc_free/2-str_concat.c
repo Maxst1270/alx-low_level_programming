@@ -39,8 +39,8 @@ char *str_concat(char *s1, char *s2)
 	sz2 = strleng(s2);
 	g = malloc(((sz1 + sz2 + 1) * sizeof(char)));
 
-	if (g == NULL)
-		return (NULL);
+	if (g == 0)
+		return (0);
 
 	for (i = 0; i < sz1 ; i++)
 	{
