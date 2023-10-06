@@ -31,16 +31,16 @@ char *argstostr(int ac, char **av)
 	int k = 0, bc = 0, h = 0, kpt = 0;
 	char *g;
 
-	if (bc == 0 || av == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	for (; k < ac; k++, bc++)
 		bc += strleng(av[k]);
 
-	g = malloc((bc + 1) * sizeof(char));
+	g = malloc((bc + ac + 1) * sizeof(char));
 
-	if (g == 0)
-		return (0);
+	if (g == NULL)
+		return (NULL);
 
 	for (k = 0; k < ac; k++)
 	{
