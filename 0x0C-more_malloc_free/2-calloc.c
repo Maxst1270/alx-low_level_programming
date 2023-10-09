@@ -17,7 +17,7 @@ char membas(char *m, char v, unsigned int y)
 	b = m;
 
 	while (y--)
-		*m++;
+		*m++ = v;
 
 	return (b);
 }
