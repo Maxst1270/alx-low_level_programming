@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	v = malloc(s1leng + 1 + n);
 
 	if (v == NULL)
-		return (NULL);
+		free(v);
 
 	for (x = 0; s1[x] != '\0'; x++)
 		v[x] = s1[x];
