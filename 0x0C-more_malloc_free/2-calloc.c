@@ -9,11 +9,8 @@
  * Return:returns point
 */
 
-char membas(char *m, char v, unsigned int y)
+char *_membas(char *m, char v, unsigned int y)
 {
-	if (m == NULL)
-		return (NULL);
-
 	char *b = m;
 
 	while (y--)
@@ -33,15 +30,17 @@ char membas(char *m, char v, unsigned int y)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	void *p;
+
 	if (size == 0 || nmemb == 0)
 		return (NULL);
 
-	void *p = malloc(sizeof(size) * nmemb);
+	p = malloc(size * nmemb);
 
 	if (p == NULL)
 		return (NULL);
 
-	membas(p, 0, size * nmemb);
+	_membas(p, 0, size * nmemb);
 
 	return (p);
 }
