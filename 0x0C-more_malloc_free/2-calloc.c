@@ -5,16 +5,16 @@
  *
  * @m:pointer to const
  * @v:const
- * @y:maxim bytes
- *
+ * @y:maxim byte *
  * Return:returns point
 */
 
 char membas(char *m, char v, unsigned int y)
 {
-	char *b;
+	if (m == NULL)
+		return (NULL);
 
-	b = m;
+	char *b = m;
 
 	while (y--)
 		*m++ = v;
@@ -33,17 +33,15 @@ char membas(char *m, char v, unsigned int y)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *p;
-
 	if (size == 0 || nmemb == 0)
 		return (NULL);
 
-	p = malloc(sizeof(size) * nmemb);
+	void *p = malloc(sizeof(size) * nmemb);
 
-	if (p == 0)
-	return (NULL);
+	if (p == NULL)
+		return (NULL);
 
-	membas(p, 0, sizeof(size), nmemb);
+	membas(p, 0, size * nmemb);
 
 	return (p);
 }
