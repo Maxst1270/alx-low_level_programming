@@ -2,14 +2,14 @@
 #include "dog.h"
 
 /**
- * _strleng - gets string length
+ * _strlen - gets string length
  *
  * @sr:string to get length of
  *
  * Return:length of string
 */
 
-int _strleng(char *sr)
+int _strlen(char *sr)
 {
 	int len = 0;
 
@@ -54,7 +54,7 @@ char *_srcpy(char *des, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *d = (dog_t) malloc(sizeof(dog_t));
+	dog_t* d = (dog_t*) malloc(sizeof(dog_t));
 
 	if (!name || age < 0 || !owner)
 		return (NULL);
@@ -62,7 +62,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (d == NULL)
 		return (NULL);
 
-	d->name = malloc(sizeof(char) * (_strleng(name) + 1));
+	d->name = malloc(sizeof(char) * (_strlen(name) + 1));
 
 	if ((*d).name == NULL)
 	{
@@ -70,7 +70,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	d->owner = malloc(sizeof(char) * (_strleng(owner) + 1));
+	d->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 
 	if ((*d).owner == NULL)
 	{
