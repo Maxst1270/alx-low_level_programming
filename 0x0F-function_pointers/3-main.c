@@ -13,13 +13,14 @@ int main(int argc, char **argv)
 {
 	int (*op_func)(int, int), b, m;
 
-	*op_func = get_op_func(argv[2]);
-
 	if (argc != 4)
 	{
 		printf("Error1\n");
 		exit(98);
 	}
+
+	op_func = get_op_func(argv[2]);
+
 	if (!op_func)
 	{
 		printf("Error2\n");
