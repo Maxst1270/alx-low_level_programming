@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 
 	op_func = get_op_func(argv[2]);
 
-	if (argc != 5)
+	if (argc != 4)
 	{
 		printf("Error1\n");
 		exit(98);
