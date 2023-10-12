@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 {
 	int (*op_func)(int, int), b, m;
 
-	op_func = get_op_func(argv[2]);
+	*op_func = get_op_func(argv[2]);
 
 	if (argc != 4)
 	{
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 		printf("Error2\n");
 		exit(99);
 	}
-	if (*argv[3] == 0 && (*argv[2] == '/' || *argv[2] == '%'))
+	if (*argv[3] == '0' && (*argv[2] == '/' || *argv[2] == '%'))
 	{
 		printf("Error3\n");
 		exit(100);
