@@ -3,7 +3,7 @@
 /**
  * sum_them_all - sums all passed arguments
  *
- * @n:number of arguments passed 
+ * @n:number of arguments passed
  * @...:numbers passed to sum
  *
  * Return:returns the sum
@@ -17,7 +17,7 @@ int sum_them_all(const unsigned int n, ...)
 	if (n == 0)
 		return (0);
 
-	va_start (kc, n);
+	va_start(kc, n);
 
 	while (v--)
 	{
