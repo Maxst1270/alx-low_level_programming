@@ -93,7 +93,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[t] == signs[g].sign[0])
 			{
-				signs[g].f(separator, cp);
+				signs[g].d(separator, cp);
 				separator = ", ";
 			}
 			g++;
