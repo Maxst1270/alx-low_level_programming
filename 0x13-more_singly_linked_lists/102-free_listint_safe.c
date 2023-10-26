@@ -20,7 +20,7 @@ listint_t *find_listint_loop_fx(listint_t *hd)
 		if (fn == fn->next)
 			return (fn);
 
-		for (dpr = head; dpr != fn; dpr = dpr->next)
+		for (dpr = hd; dpr != fn; dpr = dpr->next)
 		{
 			if (dpr == fn->next)
 				return (fn->next);
