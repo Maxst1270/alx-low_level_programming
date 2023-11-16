@@ -1,5 +1,6 @@
 #include "main.h"
 
+int sqr(int n, int sq);
 /**
  * _sqrt_recursion -calcs the natural sqrt of number
  *
