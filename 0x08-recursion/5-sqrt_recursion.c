@@ -7,7 +7,7 @@
  *
  * Return: sqrt ,or -1 otherwise
 */
-int sqr(int n, int sq);
+
 int _sqrt_recursion(int n)
 {
 	return (sqr(n, 1));
@@ -17,7 +17,7 @@ int _sqrt_recursion(int n)
  * sqr - checks for squares of numb
  *
  * @n:number given
- * #sq:nat square root
+ * @sq:square root
  *
  * Return:returns -1,square root otherwise
 */
