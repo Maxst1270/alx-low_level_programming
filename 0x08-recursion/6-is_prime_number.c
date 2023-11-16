@@ -1,5 +1,6 @@
 #include "main.h"
 
+int prim_chk(int n, int prck);
 /**
  * is_prime_number - cals prime numbers
  *
@@ -7,7 +8,7 @@
  *
  * Return:nu.ber if prime
 */
-int prim_chk(int n, int prck);
+
 int is_prime_number(int n)
 {
 	return (prim_chk(n, 1));
