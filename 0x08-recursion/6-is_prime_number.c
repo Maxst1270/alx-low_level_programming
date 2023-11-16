@@ -11,7 +11,7 @@ int prim_chk(int n, int prck);
 
 int is_prime_number(int n)
 {
-	return (prim_chk(n, 1));
+	return (prim_chk(n, 2));
 
 }
 
