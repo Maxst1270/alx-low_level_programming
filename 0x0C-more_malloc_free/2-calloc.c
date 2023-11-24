@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * membas - fills memory
+ * *_membas - fills memory
  *
  * @m:pointer to const
  * @v:const
